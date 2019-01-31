@@ -56,7 +56,29 @@ navItems[2].textContent = siteContent["nav"]["nav-item-3"];
 navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-6"];
-navItems[0, 1, 2, 3, 4, 5].style.color = "#b0b0b0";
+navItems[0].style.color = "green";
+navItems[1].style.color = "green";
+navItems[2].style.color = "green";
+navItems[3].style.color = "green";
+navItems[4].style.color = "green";
+navItems[5].style.color = "green";
+
+let newNavItem1 = document.createElement('a');
+newNavItem1.setAttribute('href', '#');
+newNavItem1.textContent = ('Button One');
+
+let newNavItem2 = document.createElement('a');
+newNavItem2.setAttribute('href', '#');
+newNavItem2.textContent = ('Button Two')
+
+const mainNav = document.querySelector('nav');
+mainNav.appendChild(newNavItem1);
+mainNav.prepend(newNavItem2)
+
+// let ctaFlex = document.getElementsByClassName(".cta")[0];
+// ctaFlex.style.marginTop = "72px";
+// ctaFlex.style.justifyContent = "flex-end";
+//This doesn't work, but I'm not sure why... And as a result, I can't seem to get the header centered correctly.
 
 
 let ctaHeader = document.querySelector("h1");
@@ -67,7 +89,7 @@ ctaHeader.style.spacing = "5px"
 ctaHeader.style.justifyContent = "center";
 ctaHeader.style.flexFlow = "column";
 ctaHeader.style.alignItems = "center"
-ctaHeader.style.width = "170px";
+ctaHeader.style.width = "40%"
 ctaHeader.style.margin = "0 82px 0 0"; //Fix ctaHeader centering
 
 let ctaButton = document.querySelector("button");
@@ -96,8 +118,7 @@ paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 paragraphs[5].textContent = siteContent["contact"]["address"];
 paragraphs[6].textContent = siteContent["contact"]["phone"];
 paragraphs[7].textContent = siteContent["contact"]["email"];
-paragraphs[7].textContent = siteContent["footer"]["copyright"];
+paragraphs[8].textContent = siteContent["footer"]["copyright"];
 
-let footer = document.getElementsByTagName("footer");
-footer[0].style.textAlign = "center";
-footer[0].style.margin = "40px 0 20px";
+document.getElementsByTagName("footer")[0].style.textAlign = "center";
+document.getElementsByTagName("footer")[0].style.margin = "40px 0 20px";
