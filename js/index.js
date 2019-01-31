@@ -66,10 +66,12 @@ navItems[5].style.color = "green";
 let newNavItem1 = document.createElement('a');
 newNavItem1.setAttribute('href', '#');
 newNavItem1.textContent = ('Button One');
+newNavItem1.style.color = "green";
 
 let newNavItem2 = document.createElement('a');
 newNavItem2.setAttribute('href', '#');
-newNavItem2.textContent = ('Button Two')
+newNavItem2.textContent = ('Button Two');
+newNavItem2.style.color = "green";
 
 const mainNav = document.querySelector('nav');
 mainNav.appendChild(newNavItem1);
@@ -122,3 +124,9 @@ paragraphs[8].textContent = siteContent["footer"]["copyright"];
 
 document.getElementsByTagName("footer")[0].style.textAlign = "center";
 document.getElementsByTagName("footer")[0].style.margin = "40px 0 20px";
+
+
+//Stretch
+paragraphs[0].style.color = "red";
+paragraphs[1].style.border = "1px dashed orange";
+paragraphs[2].style.textDecoration = "underline";
